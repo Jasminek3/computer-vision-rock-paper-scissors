@@ -1,3 +1,4 @@
-0 Sissors
-1 Rock
-2 Paper
+0 Rock
+1 Paper
+2 Sissors
+3 Nothing
