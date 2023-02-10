@@ -43,7 +43,7 @@ def get_winner(computer_choice, user_choice):
         if user_choice == "Paper":
             print('You Lost')
         else:
-            print("You Won")
+            print('You Won!')
 
 get_winner()
 # %%
