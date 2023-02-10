@@ -27,8 +27,6 @@ def get_winner(computer_choice, user_choice):
             print("You Won")
         else:
             print("You Lost")
-    else:
-        print("Error")
 
 get_winner("Rock", "Sissors")
 # %%
