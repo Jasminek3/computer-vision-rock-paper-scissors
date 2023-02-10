@@ -12,21 +12,21 @@ def get_user_choice():
 def get_winner(cc, userInput):
     if cc == userInput:
         print("It is a tie!")
-    elif userInput == "Rock":
-        if cc == "Paper":
+    elif cc == "Rock":
+        if userInput == "Paper":
+            print("You Won")
+        else:
             print("You Lost")
-        else:
-            print("You Won!")
-    elif userInput == "Paper":
-        if cc == "rock":
-                print("You Won")
-        else:
+    elif cc == "Paper":
+        if userInput == "rock":
                 print("You Lost")
-    elif userInput == "Scissors":
-        if cc == "Rock":
-            print("You Lost")
         else:
-            print("You Won!")
+                print("You Won")
+    elif cc == "Scissors":
+        if userInput == "Rock":
+            print("You Won")
+        else:
+            print("You Lost")
     else:
         print("Error")
 
