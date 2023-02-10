@@ -11,7 +11,7 @@ def get_user_choice():
 
 def get_winner(cc, userInput):
     if cc == userInput:
-        print("Tie")
+        print("It is a tie!")
     elif userInput == "Rock":
         if cc == "Paper":
             print("You Lost")
