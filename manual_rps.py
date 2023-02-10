@@ -2,28 +2,28 @@
 import random
 
 def get_computer_choice():
-    cc = random.choice(["Rock", "Paper", "Scissors"])
-    return cc
+    computer_choice = random.choice(["Rock", "Paper", "Scissors"])
+    return computer_choice
 
 def get_user_choice():
-    userInput = input("Enter your choice")
-    return userInput
+    user_choice = input("Enter your choice")
+    return user_choice
 
-def get_winner(cc, userInput):
-    if cc == userInput:
+def get_winner(computer_choice, user_choice):
+    if computer_choice == user_choice:
         print("It is a tie!")
-    elif cc == "Rock":
-        if userInput == "Paper":
+    elif computer_choice == "Rock":
+        if user_choice == "Paper":
             print("You Won")
         else:
             print("You Lost")
-    elif cc == "Paper":
-        if userInput == "rock":
+    elif computer_choice == "Paper":
+        if user_choice == "rock":
                 print("You Lost")
         else:
                 print("You Won")
-    elif cc == "Scissors":
-        if userInput == "Rock":
+    elif computer_choice == "Scissors":
+        if user_choice == "Rock":
             print("You Won")
         else:
             print("You Lost")
