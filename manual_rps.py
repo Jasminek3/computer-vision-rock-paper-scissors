@@ -10,40 +10,26 @@ def get_user_choice():
     return user_choice
 
 def get_winner(computer_choice, user_choice):
-    if computer_choice == user_choice:
+    if computer_choice == "Rock" and user_choice == "Paper":
+        print("You Won!")
+        return "Player"
+    elif computer_choice == "Rock" and user_choice == "Scissors":
+        print("You Lost")
+        return "Cpu"
+    elif computer_choice == "Paper" and user_choice == "Scissors":
+        print("You Won!")
+        return "Player"
+    elif computer_choice == "Paper" and user_choice == "Rock":
+        print("You Lost")
+        return "Cpu"
+    elif computer_choice == "Scissors" and user_choice == "Rock":
+        print("You Won!")
+        return "Player"
+    elif computer_choice == "Scissors" and user_choice == "Paper":
+        print("You Lost")
+        return "Cpu"
+    else:
         print("It is a tie!")
-    elif computer_choice == "Rock":
-        if user_choice == "Paper":
-            print('You Won!')
-        else:
-            print('You lost')
-    elif computer_choice == "Rock":
-        if user_choice == "Scissors":
-            print('You Lost')
-        else:
-            print('You Won!')
+        return "Tie"
 
-    elif computer_choice == "Paper":
-        if user_choice == "Rock":
-            print('You Lost')
-        else:
-            print('You Won!')
-    elif computer_choice == "Paper":
-        if user_choice == "Scissors":
-            print('You Won!')
-        else:
-            print('You Lost')
-
-    elif computer_choice == "Scissors":
-        if user_choice == "Rock":
-            print('You Won!')
-        else:
-            print('You Lost')
-    elif computer_choice == "Scissors":
-        if user_choice == "Paper":
-            print('You Lost')
-        else:
-            print('You Won!')
-
-get_winner()
 # %%
