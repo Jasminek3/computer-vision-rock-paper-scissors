@@ -11,20 +11,25 @@ def get_user_choice():
 
 def get_winner(computer_choice, user_choice):
     if computer_choice == "Rock" and user_choice == "Paper":
-        return "You Won!"
+        print("You Won!")
     elif computer_choice == "Rock" and user_choice == "Scissors":
-        return "You Lost"
+        print("You lost")
     elif computer_choice == "Paper" and user_choice == "Scissors":
-        return "You Won!"
+        print("You Won!")
     elif computer_choice == "Paper" and user_choice == "Rock":
-        return "You Lost"
+        print("You lost")
     elif computer_choice == "Scissors" and user_choice == "Rock":
-        return "You Won!"
+        print("You Won!")
     elif computer_choice == "Scissors" and user_choice == "Paper":
-        return "You Lost"
+        print("You lost")
     else:
         print("It is a tie!")
-        return "It is a tie!"
 
-get_winner()
+def play():
+    get_computer_choice()
+    get_user_choice()
+    get_winner()
+
+play()
+
 # %%
