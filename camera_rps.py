@@ -1,6 +1,4 @@
-
-import cv2
-from computer-vision-rock-paper-scissors.manual_rps import play
+import numpy as np
 
 def get_prediction():
-    return play()
+    
